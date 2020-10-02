@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: monospace;
+	background-color: #28292C;
+	height: 100vh;
+	overflow: hidden;
+	text-transform: capitalize;
+}
+
+h2{
+	color: #E8EAED;
+	font-size: 1.6rem;
+	font-weight: lighter;
+	margin-left: 4%;
+}
+
+.btn-container{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+}
+ 
+.btn{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	animation: multiColor infinite linear;
+	animation-duration: 3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn img{
+	height: 40px;
+	width: 40px;
+}  
+
+.btn:hover{
+	height: 120px;
+	width: 120px;
+	transition: height width ease;
+	transition-duration: 0.1s;
+}
+
+.note-container{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.note{
+	width: 60%;
+	height: 20%;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.33);
+	background-color: rgba(255, 255, 255, 0.14);
+}
+
+.note p{
+	text-align: center;
+	color: #E8EAED;
+	margin: 2%;
+	align-items: center;
+}
+
+@keyframes multiColor {
+	0%{background-color: tomato;}
+	20%{background-color: lightyellow;}
+	40%{background-color: palegreen;}
+	60%{background-color: lightblue;}
+	80%{background-color: mediumpurple;}
+	100%{background-color: lightcoral;}
+}
+
+@media screen and (max-width: 600px) {
+	.note{
+	width: 80%;
+	height: 20%;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.33);
+	background-color: rgba(255, 255, 255, 0.14);
+	}
+	.note p{
+		margin: 6%;
+	}
+
+	h2{
+		font-size: 1.2rem
+	}
+	.menu h2{
+		font-size: 1.2rem;
+	}
+
+	.menu li p{
+		font-size: 1rem;
+	}
+}
